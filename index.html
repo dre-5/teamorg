@@ -36,7 +36,7 @@
   document.getElementById('app').src = APP_URL;
   document.getElementById('direct').href = APP_URL;
   setTimeout(() => { document.getElementById('help').hidden = false; }, 10000);
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js', { scope: './' }).catch(() => {});
 </script>
 </body>
 </html>
