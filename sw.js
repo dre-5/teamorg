@@ -1,6 +1,6 @@
 // Service Worker der Startseite: macht sie als App installierbar und startet auch bei schlechtem Netz.
 // Zwischengespeichert wird nur der Rahmen (Startseite, Symbole) – die Teamdaten kommen immer live von Google.
-const CACHE = 'djugend-rahmen-v3';
+const CACHE = 'djugend-rahmen-v4';
 const SHELL = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './icon-maskable-512.png'];
 
 self.addEventListener('install', e => {
